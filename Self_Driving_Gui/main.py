@@ -313,7 +313,7 @@ class Ui_Form(QWidget):
             self.masked1=masked #for save image 
             self.label_3.setPixmap(QPixmap(masked))
             self.label_5.setText("Hough Line Combine with Original Image")
-    
+    ##To Do save converted
     def save_converted_image(self):
         img=QtGui.QImage(self.masked1)
         convert=qimage2ndarray.rgb_view(img)
